@@ -30,6 +30,7 @@
 }
 ```
 - 城市代码可以查看微博的[省份城市编码表](https://open.weibo.com/wiki/%E7%9C%81%E4%BB%BD%E5%9F%8E%E5%B8%82%E7%BC%96%E7%A0%81%E8%A1%A8)。如果打不开，多刷新几次。
+<center><img src="微博城市编码.png"><center> 
 - 配置好文件之后，逐行运行 `爬取微博POI.ipynb` 中的代码框即可爬取微博POI。
 
 ### 爬取微博POI上的用户签到
@@ -40,8 +41,10 @@
 - 其它城市的接口需要[手机端url](https://m.weibo.cn/)自己找。
 
 ## 结果
+<center><img src="fig/结果1.png"><center> 
 
 - 遍历结束后，得到了接近两万个微博POI，但清洗后只有 8146 个 POI 落在上海。
+<center><img src="fig/结果2.png"><center> 
 
 - 用户签到只有最近的时间段，应该是半年至一年内的数据，太早的数据该接口不能得到获取。
 
