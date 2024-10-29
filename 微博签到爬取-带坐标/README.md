@@ -30,7 +30,6 @@
 }
 ```
 - 城市代码可以查看微博的[省份城市编码表](https://open.weibo.com/wiki/%E7%9C%81%E4%BB%BD%E5%9F%8E%E5%B8%82%E7%BC%96%E7%A0%81%E8%A1%A8)。如果打不开，多刷新几次。
-<center><img src="微博城市编码.png"><center> 
 - 配置好文件之后，逐行运行 `爬取微博POI.ipynb` 中的代码框即可爬取微博POI。
 
 ### 爬取微博POI上的用户签到
