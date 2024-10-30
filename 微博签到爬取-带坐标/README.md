@@ -30,21 +30,25 @@
 }
 ```
 - 城市代码可以查看微博的[省份城市编码表](https://open.weibo.com/wiki/%E7%9C%81%E4%BB%BD%E5%9F%8E%E5%B8%82%E7%BC%96%E7%A0%81%E8%A1%A8)。如果打不开，多刷新几次。
+<center><img src="fig/微博城市编码.png"><center>
 - 配置好文件之后，逐行运行 `爬取微博POI.ipynb` 中的代码框即可爬取微博POI。
 
 ### 爬取微博POI上的用户签到
 
 - 利用[手机端url](https://m.weibo.cn/)和微博POI的唯一标识符 `poiid`。
 - 用到的接口：`https://m.weibo.cn/api/container/getIndex?containerid=2306570042{poiid}&luicode=10000011&lfid=100103&q={name}&t=&page={page}`。
-- 这是上海市的接口，其中 poiid、name 和 page是需要循环切换的。
+- 这是上海市的接口，其中 poiid、name 和 page 是需要循环切换的。
 - 其它城市的接口需要[手机端url](https://m.weibo.cn/)自己找。
 
 ## 结果
+
 <center><img src="fig/结果1.png"><center> 
 
-- 遍历结束后，得到了接近两万个微博POI，但清洗后只有 8146 个 POI 落在上海。
+- 遍历结束后，得到了接近两万个微博POI，但清洗后只有 8146 个 POI 落在上海大市。
 <center><img src="fig/结果2.png"><center> 
+- 用户签到只有最近几年的数据，太早的数据该接口不能获取。
+- 提取了三千多个POI的用户签到数据，接近 20 万条数据。放在上一级目录 `data/shanghai.csv`。
 
-- 用户签到只有最近的时间段，应该是半年至一年内的数据，太早的数据该接口不能得到获取。
+## 结语
 
-- 提去了三千个POI的数据，接近 20 万条数据。放在上一级目录 `data/shanghai.csv`。
+**需要注意的是，爬虫技术的使用需要遵守相关法律法规和平台规定，合理利用爬虫技术，避免对平台造成不必要的负担。同时，对爬取到的数据进行合理使用，保护用户隐私和数据安全。分享的数据已经进行了处理，不会出现个人信息。**
