@@ -40,8 +40,10 @@
 - 其它城市的接口需要[手机端url](https://m.weibo.cn/)自己找。
 
 ## 结果
+<center><img src="fig/结果1.png"><center> 
 
 - 遍历结束后，得到了接近两万个微博POI，但清洗后只有 8146 个 POI 落在上海。
+<center><img src="fig/结果2.png"><center> 
 
 - 用户签到只有最近的时间段，应该是半年至一年内的数据，太早的数据该接口不能得到获取。
 
