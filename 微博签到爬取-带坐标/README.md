@@ -39,7 +39,20 @@
 - 利用[手机端url](https://m.weibo.cn/)和微博POI的唯一标识符 `poiid`。
 - 用到的接口：`https://m.weibo.cn/api/container/getIndex?containerid=2306570042{poiid}&luicode=10000011&lfid=100103&q={name}&t=&page={page}`。
 - 这是上海市的接口，其中 poiid、name 和 page 是需要循环切换的。
-- 其它城市的接口需要[手机端url](https://m.weibo.cn/)自己找。
+- 其它城市的接口需要利用手机端自己找。
+
+### 找接口
+1. 利用[手机端url](https://m.weibo.cn/)搜索需要爬取城市的热门地标：我们以上海为例，搜索热门地标[上海交通大学（徐汇校区）](https://m.weibo.cn/p/index?containerid=100808ad6670074e043660db887b89ef25e03e_-_lbs&lcardid=frompoi&extparam=frompoi&luicode=10000011&lfid=100103type%3D21%26q%3D%E4%B8%8A%E6%B5%B7%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6%26t%3D)。
+<center><img src="fig/第一步.png"><center>
+
+2. 进入页面然后到开发者模式，一般可以按F12。需要刷新一次页面，才能看见响应数据。
+<center><img src="fig/第二步.png"><center>
+
+3. 一般`getIndex`开头的js文件就是数据接口。
+<center><img src="fig/第三步.png"><center>
+
+4. 负载里面的参数需要修改，以获取不同POI，不同页的数据。向下滚动查看下一页参数。
+<center><img src="fig/第四步.png"><center>
 
 ## 结果
 
