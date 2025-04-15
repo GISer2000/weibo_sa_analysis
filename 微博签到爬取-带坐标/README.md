@@ -6,7 +6,7 @@
 - `微博POI数据包括`：poiid、poi名称（title）、经纬度（lon/lat）、地址（address）和文本描述（address）。
 - `对应POI上的签到数据包括`：mid、uid、签到文本（text）、签到设备类型（source）、签到时间（created_at）和签到图片url（pics）。
 
-目录有两个python文件和一个配置文件：
+目录有两个ipynb文件和一个配置文件：
 - `爬取微博POI.ipynb`：用于抓取微博POI（参考了这位大佬的逻辑：[参考连接](https://gitee.com/Jongsh/weibo-poi-crawler)）。
 - `爬取微博POI上的用户签到.ipynb`：用于抓取对应微博 POI 上的用户签到。
 - config
